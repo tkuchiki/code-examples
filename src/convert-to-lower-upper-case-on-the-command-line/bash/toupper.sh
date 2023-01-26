@@ -1,0 +1,2 @@
+val="abc"
+echo ${val^^}
