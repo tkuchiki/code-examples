@@ -1,0 +1,2 @@
+- [tolower](https://www.gnu.org/software/gawk/manual/gawk.html#index-converting-4)
+- [toupper](https://www.gnu.org/software/gawk/manual/gawk.html#index-converting-5)

@@ -1,0 +1,2 @@
+val="ABC"
+echo ${val,,}

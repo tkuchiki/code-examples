@@ -1,0 +1,2 @@
+- [ToLower()](https://learn.microsoft.com/en-US/dotnet/api/system.string.tolower?view=netframework-4.8.1)
+- [ToUpper()](https://learn.microsoft.com/en-US/dotnet/api/System.String.ToUpper?view=netframework-4.8.1)
