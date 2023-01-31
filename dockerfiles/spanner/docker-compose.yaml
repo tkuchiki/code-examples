@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  spanner:
+    image: gcr.io/cloud-spanner-emulator/emulator:latest
+    ports:
+      - "9010:9010"
+      - "9020:9020"
