@@ -1,6 +1,6 @@
-## Avoid "argument list too lang" error when using jq in bash
+# Avoid "argument list too lang" error when using jq in bash
 
-### Verified Environment
+## Verified Environment
 
 |   | Version |
 | ----- | --- |
@@ -24,7 +24,7 @@ echo '{"array": null}' | jq --arg array "[1, 2, 3, ..., 1000000]" '.array = $arr
 #                                       huge array (about 6.6MB)
 ```
 
-### How to resolve the error
+## How to resolve the error
 
 You can use the following option.
 
