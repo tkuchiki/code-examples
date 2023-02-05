@@ -7,7 +7,7 @@
 | OS  | Ubuntu 20.04.5 LTS |
 | jq  | jq-1.6 |
 
-### Why is the error occurring?
+## Why is the error occurring?
 
 If you run the following scripts in bash, you will get `bash: /usr/bin/jq: Argument list too long` error.
 
