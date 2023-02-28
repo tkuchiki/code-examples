@@ -9,6 +9,6 @@ if [ "${escalation_policy_id}" = "" ]; then
     exit 1
 fi
 
-for user_id in $(get_primary_oncallers "$escalation_policy_id}"); do
+for user_id in $(get_primary_oncallers "${escalation_policy_id}"); do
     get_user_email "${user_id}"
 done
