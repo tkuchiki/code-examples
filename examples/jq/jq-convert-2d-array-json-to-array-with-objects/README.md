@@ -33,6 +33,12 @@
 [convert.sh](./convert.sh)
 <!-- end -->
 
+`bash convert.sh example.json`
+
+<!-- include lang="json" -->
+[result.json](./result.json)
+<!-- end -->
+
 ### Explanation
 
 > `.[0] as $headers`
