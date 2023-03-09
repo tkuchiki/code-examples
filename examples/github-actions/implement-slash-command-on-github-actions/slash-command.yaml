@@ -1,0 +1,36 @@
+name: "Slash command"
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  slash-command:
+    if: github.event_name == 'issue_comment' &&
+        startsWith(github.event.comment.body, '/my-slash-command')
+    runs-on: ubuntu-20.04
+    env:
+      REPO: ${{ github.repository }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      COMMENT_ID: ${{ github.event.comment.id }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - name: Add eyes reaction
+      run: |
+        gh api \
+        --method POST \
+        -H "Accept: application/vnd.github+json" \
+        -H "X-GitHub-Api-Version: 2022-11-28" \
+        /repos/$REPO/issues/comments/$COMMENT_ID/reactions \
+        -f content='eyes'
+    - uses: actions/checkout@v3
+    - name: Do something
+      run: |
+        # implement something
+    - name: Add rocket reaction
+      run: |
+        gh api \
+        --method POST \
+        -H "Accept: application/vnd.github+json" \
+        -H "X-GitHub-Api-Version: 2022-11-28" \
+        /repos/$REPO/issues/comments/$COMMENT_ID/reactions \
+        -f content='rocket'
